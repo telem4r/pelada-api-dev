@@ -1,0 +1,11 @@
+version: 1.0
+runtime: python311
+build:
+  commands:
+    build:
+      # Entra na pasta api para instalar as dependências
+      - pip install -r api/requirements.txt
+run:
+  runtime-version: 3.11
+  # Executa como módulo para o Python entender a hierarquia de pastas
+  command: python -m uvicorn app.main:app --host 0.0.0.0 --port 8080

@@ -50,6 +50,9 @@ class FinanceV2ObligationModel(BaseModel):
     user_id: Optional[str] = None
     player_id: Optional[str] = None
     match_id: Optional[str] = None
+    guest_id: Optional[str] = None
+    guest_name: Optional[str] = None
+    guest_identity_status: Optional[str] = None
     player_name: Optional[str] = None
     player_avatar_url: Optional[str] = None
     source_type: str
@@ -72,6 +75,9 @@ class FinanceV2EntryModel(BaseModel):
     user_id: Optional[str] = None
     player_id: Optional[str] = None
     match_id: Optional[str] = None
+    guest_id: Optional[str] = None
+    guest_name: Optional[str] = None
+    guest_identity_status: Optional[str] = None
     player_name: Optional[str] = None
     user_name: Optional[str] = None
     user_avatar_url: Optional[str] = None
